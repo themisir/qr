@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Default -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>@misircoder/qr :: create qr code</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="description" content="Create qr code online just by typing it. It's free and open source">
+
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@misirjafarov">
+	<meta name="twitter:creator" content="@misirjafarov">
+	<meta name="twitter:title" content="@misircoder/qr :: create qr code">
+	<meta name="twitter:description" content="Create qr code online just by typing it. It's free and open source">
+	<meta name="twitter:image" content="image.png">
+
+	<!-- Facebook -->
+	<meta property="og:title" content="@misircoder/qr :: create qr code">
+	<meta property="og:description" content="Create qr code online just by typing it. It's free and open source">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="image.png">
+	<meta property="og:image:type" content="image/png">
+	<meta property="og:image:width" content="819">
+	<meta property="og:image:height" content="460">
+</head>
+<body>
+	
+	<div class="content">
+		<div id="qrcode"></div>
+	</div>
+	<input id="url" autocomplete="off" placeholder="enter text here">
+	<i id="credits">created by <a href="https://github.com/misircoder/" target="_blank">@misircoder</a>, qrcode.js by <a href="https://github.com/davidshimjs/" target="_blank" rel="nofollow">@davidshimjs</a>.</i>
+	<script type="text/javascript" src="qrcode.min.js"></script>
+	<script type="text/javascript">
+		const defaultValue = "http://misircoder.github.io";
+		new QRCode(document.getElementById("qrcode"), defaultValue);
+		document.getElementById("url").onkeyup = function() {
+			document.querySelectorAll('#qrcode>*').forEach(function(e){ e.remove(); });
+			new QRCode(document.getElementById("qrcode"), this.value || defaultValue);
+		};
+	</script>
+
+</body>
+</html>

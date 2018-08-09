@@ -1,0 +1,48 @@
+.content {
+	width: 256px;
+	background: #fff;
+	padding: 30px;
+	margin-top: 100px;
+	margin-bottom: 50px;
+	margin-right: auto;
+	margin-left: auto;
+	border-radius: 20px;
+	box-shadow: rgba(0, 0, 0, 0.57) 0px 5px 8px 0px;
+}
+
+body {
+	background: #1d1d1d;
+	margin: 0;
+}
+
+#qrcode {
+	height: 256px;
+}
+
+input#url {
+	display: block;
+	width: 300px;
+	margin: 0 auto;
+	border: 0;
+	border-bottom: 2px solid #4e4e4e;
+	background: transparent;
+	color: #ccc;
+	text-align: center;
+	outline: 0 !important;
+	padding-bottom: 3px;
+	font-size: 15px;
+	font-family: monospace;
+}
+
+i#credits {
+	color: #ccc;
+	display: block;
+	margin-top: 100px;
+	font-family: monospace;
+	text-align: center;
+	opacity: 0.4;
+}
+
+i#credits>a {
+	color: #757575 !important;
+}
