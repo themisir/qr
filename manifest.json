@@ -1,0 +1,20 @@
+{
+    "short_name": "QR Generator",
+    "name": "Encode text into qr code",
+    "icons": [
+      {
+        "src": "/assets/icon-192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/assets/icon-512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/?utm-source=a2hs",
+    "background_color": "#FFFFFF",
+    "display": "standalone",
+    "theme_color": "#FA533A"
+  }

@@ -1,0 +1,82 @@
+.content {
+    width: 256px;
+    background: #fff;
+    padding: 30px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.57) 0px 5px 8px 0px;
+}
+
+body {
+    background: #1d1d1d;
+    margin: 0;
+}
+
+#qrcode {
+    height: 256px;
+}
+
+input#url {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    border: 0;
+    border-bottom: 2px solid #4e4e4e;
+    background: transparent;
+    color: #ccc;
+    text-align: center;
+    outline: 0 !important;
+    padding-bottom: 3px;
+    font-size: 15px;
+    font-family: monospace;
+}
+
+i#credits {
+    color: #ccc;
+    display: block;
+    margin-top: 100px;
+    font-family: monospace;
+    text-align: center;
+    opacity: 0.4;
+}
+
+i#credits>a {
+    color: #757575 !important;
+}
+
+.top-btn {
+    position: fixed;
+    top: 30px;
+    padding: 8px 15px;
+    border: 0;
+    border-radius: 4px;
+    color: #afafaf;
+    background: #4e4e4e;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    border-bottom: #404040 2px solid;
+    outline: 0 !important;
+    cursor: pointer;
+    font-size: 11px;
+	font-family: monospace;
+	text-decoration: none !important;
+}
+
+.top-btn:active {
+    border-top: #232323 2px solid; 
+    border-bottom: 0;
+}
+
+.top-btn#download {
+    right: 50px;
+}
+
+.top-btn#github {
+    right: 150px;
+}
+
+.top-btn#logo {
+    left: 50px;
+}
