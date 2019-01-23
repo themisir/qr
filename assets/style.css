@@ -80,3 +80,22 @@ i#credits>a {
 .top-btn#logo {
     left: 50px;
 }
+
+.getit {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .getit {
+        display: block;
+        position: fixed;
+        z-index: 3;
+    }
+    .getit.chrome {
+        right: 30px;
+        bottom: 20px;
+    }
+    .getit>img {
+        width: 200px;
+    }
+}
